@@ -14,23 +14,23 @@ export class Main extends Component {
           <Col xs={12} md={12} lg={4}>
             <Header />
             <br />
-            <hr />
+           
             {/*  style="margin: 10px" */}
             <div>
               {/* style="margin-bottom:10px;" */}
-              <div>
-                <strong>MESSAGES</strong>
+              <div className="title">
+                <h2 className="title2">Messages</h2>
               </div>
               <div>
-                <div class="form-group">
+                <div className="form-group">
                   {/* style = "background-color: #F3EFEE" */}
-                  <input type="text" class="form-control" id="usr" placeholder="Search for a message" />
+                  <input type="text" className="form-control" id="usr" placeholder="Search for a message" />
                 </div>
               </div>
 
               <MessageHead />
 
-              <hr />
+              
 
             </div>
           </Col>

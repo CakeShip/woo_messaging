@@ -6,17 +6,17 @@ import './main.css';
 export class MessageHead extends Component {
   render() {
     return (
-      <Row>
+      <Row className="messages">
         <Col xs={5} md={4}>
           <Image src={ree} alt="Ree" width="100%" circle />
         </Col>
         <Col xs={7}>
           {/* style="margin-bottom:10px;" */}
-          <Col xs={12}>
+          <Col xs={12} className="username">
             <strong>God is Love</strong>
           </Col>
           {/* style="margin-bottom:10px;" */}
-          <Col xs={12}>
+          <Col xs={12} className="msg">
             God sent you the gift of life
           </Col>
         </Col>
