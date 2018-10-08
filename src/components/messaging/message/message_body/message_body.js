@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './message_body.css';
 import Form from '../message_form/message_form';
 import firebase from 'firebase';
-import firebaseConfig from '../../../config';
+import firebaseConfig from '../../../../config';
 
 firebase.initializeApp(firebaseConfig);
 
@@ -12,6 +12,7 @@ export class Message_body extends Component {
     this.state = {
       user: null,
     }
+    console.log(this.props.roomID)
   }
   componentDidMount() {
     firebase.auth().onAuthStateChanged(user => {
@@ -49,7 +50,7 @@ export class Message_body extends Component {
           )}
         </div>
         <div className="app__list">
-          <Form user={this.state.user} />
+          <Form roomID={this.props.roomID} user={this.state.user} />
         </div>
       </div>
     );
