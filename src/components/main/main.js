@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Grid, Col, Row } from 'react-bootstrap';
 import { Header } from '../header/header';
-import { MessageHead } from '../message_head/main';
+import { MessageHead } from '../message/message_head/main';
 import './main.css';
+import {Message_body} from '../message/message_body/message_body'
 
 export class Main extends Component {
   render() {
@@ -12,27 +13,29 @@ export class Main extends Component {
         <Row>
           {/* style="border:1px solid black; margin-top:10px" */}
           <Col xs={12} md={12} lg={4}>
-            <Header />
+            {/* <Header /> */}
             <br />
             <hr />
             {/*  style="margin: 10px" */}
             <div>
               {/* style="margin-bottom:10px;" */}
-              <div>
+              {/* <div>
                 <strong>MESSAGES</strong>
               </div>
-              <div>
-                <div class="form-group">
+              <div> */}
+                {/* <div class="form-group"> */}
                   {/* style = "background-color: #F3EFEE" */}
-                  <input type="text" class="form-control" id="usr" placeholder="Search for a message" />
-                </div>
-              </div>
+                  {/* <input type="text" class="form-control" id="usr" placeholder="Search for a message" /> */}
+                {/* </div> */}
+              {/* </div> */}
 
-              <MessageHead />
+              {/* <MessageHead /> */}
 
-              <hr />
+              {/* <hr /> */}
 
             </div>
+
+          <Message_body />
           </Col>
         </Row>
       </Grid>

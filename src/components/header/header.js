@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Col } from 'react-bootstrap';
-import './header.css';
+import { Col, Button } from 'react-bootstrap';
+import './header.css'; 
 
 export class Header extends Component {
   render() {
@@ -19,7 +19,7 @@ export class Header extends Component {
           <span class="glyphicon glyphicon-bell"></span>
         </Col>
         <Col xs={2}>
-          <span class="glyphicon glyphicon-comment"></span>
+          <a><span class="glyphicon glyphicon-comment"></span></a>
         </Col>
         <Col xs={2}>
           <span class="glyphicon glyphicon-user"></span>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Col, Row, Image } from 'react-bootstrap';
-import ree from '../../imgs/00.jpg';
+import ree from '../../../imgs/00.jpg';
 import './main.css';
 
 export class MessageHead extends Component {
