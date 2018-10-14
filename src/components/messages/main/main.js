@@ -31,11 +31,11 @@ export class Messages extends Component {
                   </div>
                 </div>
 
-                <MessageHead/>
+                <MessageHead roomID="1"/>
                 <hr />
-                <MessageHead />
+                <MessageHead roomID="2"/>
                 <hr />
-                <MessageHead />
+                <MessageHead roomID="3"/>
 
               </div>
             </Col>

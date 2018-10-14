@@ -5,15 +5,13 @@ import ree from '../../../imgs/00.jpg';
 import './main.css';
 
 export class MessageHead extends Component {
-  
   reroute = () => {
     console.log("Hello");
   };
-
   render() {
     return (
       <div onClick={this.reroute}>
-        <Link to="/message" className="link">
+        <Link to={`/message/${this.props.roomID}`} className="link">
           <Row>
             <Col xs={5} md={4}>
               <Image src={ree} alt="Ree" width="100%" circle />
