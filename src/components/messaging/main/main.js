@@ -6,7 +6,7 @@ import {Message_body} from '../message/message_body/message_body'
 
 export class Messaging extends Component {
   render() {
-    console.log(number)
+    // console.log(number)
     return (
       <Grid>
         {/* style="line-height:1em" */}

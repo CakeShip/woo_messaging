@@ -7,8 +7,7 @@
     height: 80px;
   }
   .app__header {
-    background-color: #222;
-    padding: 20px;
+    margin-top: 3em;
     color: white;
   }
   .app__intro {

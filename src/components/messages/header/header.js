@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
 import './header.css';
 import heart from '../../../assets/icons/heart.svg';
 import alarm from '../../../assets/icons/alarm.png';
@@ -24,9 +25,11 @@ export class Header extends Component {
         <Col xs={2}>
           <img src={alarm} alt="alarm" className="icon"></img>
         </Col>
-        <Col xs={2}>
-          <img src={chat} alt="chat" className="icon"></img>
-        </Col>
+        <Link to="/" className="link">
+          <Col xs={2}>
+            <img src={chat} alt="chat" className="icon"></img>
+          </Col>
+        </Link>
         <Col xs={2}>
           <img src={user} alt="user" className="icon"></img>
         </Col>
